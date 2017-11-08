@@ -11,8 +11,16 @@
   </head>
 
   <body>
+    <div class="navbar text-center">
+      <%= link_to 'MENU', restaurants_path %>
+    </div>
+
     <div class="container">
      <%= yield %>
+    </div>
+
+    <div class="footer text-center">
+      <%= link_to 'New Restaurant', new_restaurant_path %>
     </div>
   </body>
 </html>

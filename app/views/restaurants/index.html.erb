@@ -4,9 +4,13 @@
 
   <div class="restaurant-data">
     <% @restaurants.each do |restaurant|%>
-    <h3> <strong> <%= restaurant.name %> </strong> </h3>
+      <h3> <strong> <%= link_to "#{restaurant.name}", restaurant %> </strong> </h3>
     <p>( <%= restaurant.category %> )</p>
     <p><strong>Address:</strong> <%= restaurant.address %> - <strong>Phone:</strong> <%= restaurant.phone_number %> </p>
     <%end%>
+  </div>
+
+  <div class="restaurant-reviews">
+
   </div>
 </div>

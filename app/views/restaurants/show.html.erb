@@ -10,5 +10,9 @@
   <div class="restaurant-reviews">
     <h2> Reviews </h2>
   </div>
-  <%= link_to 'Back', restaurants_path %>
+  <div class="restaurant-options">
+    <%=  link_to 'Delete Restaurant', @restaurant, method: :delete, data: { confirm: 'Are you sure?' }  %>
+    <br>
+    <%= link_to 'Back', restaurants_path %>
+  </div>
 </div>
