@@ -5,7 +5,7 @@
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone_number %>
-    <%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"], {}, class: 'form-control'%>
+    <%= f.input :category, collection: Restaurant::CATEGORIES %>
   </div>
 
   <div class="form-actions">
