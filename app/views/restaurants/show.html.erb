@@ -7,12 +7,12 @@
     <p><strong>Address:</strong> <%= @restaurant.address %> - <strong>Phone:</strong> <%= @restaurant.phone_number %> </p>
   </div>
 
+  <div class="restaurant-options">
+    <%=  link_to 'Delete Restaurant', @restaurant, method: :delete, data: { confirm: 'Are you sure?' }  %>
+  </div>
+
   <div class="restaurant-reviews">
     <h2> Reviews </h2>
   </div>
-  <div class="restaurant-options">
-    <%=  link_to 'Delete Restaurant', @restaurant, method: :delete, data: { confirm: 'Are you sure?' }  %>
-    <br>
     <%= link_to 'Back', restaurants_path %>
-  </div>
 </div>
